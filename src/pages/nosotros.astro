@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import {dataNegocio} from '../data/negocio.ts'
 ---
 
 <Layout>
@@ -70,8 +71,8 @@ import Layout from '../layouts/Layout.astro';
             <a href="/contacto" class="bg-accent text-secondary px-8 py-3 rounded-lg font-semibold hover:bg-accent-hover hover:text-secondary-foreground transition-colors">
               Contactar Ahora
             </a>
-            <a href="tel:5551234567" class="bg-accent text-secondary px-8 py-3 rounded-lg font-semibold hover:bg-accent-hover hover:text-secondary-foreground transition-colors">
-              Llamar (555) 123-4567
+            <a href={dataNegocio.phone} class="bg-accent text-secondary px-8 py-3 rounded-lg font-semibold hover:bg-accent-hover hover:text-secondary-foreground transition-colors">
+              Llamar {dataNegocio.phone}
             </a>
           </div>
         </div>
