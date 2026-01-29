@@ -1,0 +1,17 @@
+---
+import logo from "../assets/logo_rep.webp"
+import Navigation from './Navigation.astro';
+---
+<header class="bg-background text-white shadow-lg">
+  <div class="container mx-auto px-4 py-6">
+    <div class="flex items-center justify-between">
+      <div class="flex items-center space-x-4">
+        <div class="w-10 h-10 rounded-lg flex items-center justify-center">
+          <img src={logo.src} alt="Logo" fetchpriority="high" class="w-10 h-10" />
+        </div>
+        <h1 class="text-2xl text-primary font-bold">Omega Reparaciones</h1>
+      </div>
+      <Navigation />
+    </div>
+  </div>
+</header>

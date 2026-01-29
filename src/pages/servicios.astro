@@ -1,0 +1,148 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+  <section class="py-16">
+    <div class="container mx-auto px-4">
+      <h1 class="text-4xl font-bold text-center mb-12 text-primary">
+        Nuestros Servicios
+      </h1>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <!-- Servicio 1 -->
+        <div class="bg-muted rounded-lg shadow-lg p-8">
+          <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+            </svg>
+          </div>
+          <h2 class="text-2xl font-bold mb-4">Reparación de Hardware</h2>
+          <p class="text-secondary-foreground mb-4">
+            Diagnóstico experto y reparación de todos los componentes de tu computadora.
+          </p>
+          <ul class="space-y-2 text-secondary-foreground mb-6">
+            <li class="flex text-secondary-foreground
+               items-start">
+              <span class="text-primary mr-2">•</span>
+              Cambio de fuente de poder, motherboard, RAM
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary mr-2">•</span>
+              Reemplazo de disco duro y SSD
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary mr-2">•</span>
+              Reparación de tarjetas gráficas y de sonido
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary mr-2">•</span>
+              Actualización de componentes
+            </li>
+          </ul>
+        </div>
+
+        <!-- Servicio 2 -->
+        <div class="bg-muted rounded-lg shadow-lg p-8">
+          <div class="w-16 h-16 bg-green-100 rounded-lg flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path>
+            </svg>
+          </div>
+          <h2 class="text-2xl font-bold mb-4">Instalación de Software</h2>
+          <p class="text-secondary-foreground mb-4">
+            Instalación profesional y configuración de todo tipo de software.
+          </p>
+          <ul class="space-y-2 text-secondary-foreground mb-6">
+            <li class="flex items-start">
+              <span class="text-primary mr-2">•</span>
+              Instalación de Windows y Linux
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary mr-2">•</span>
+              Configuración de drivers y controladores
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary mr-2">•</span>
+              Instalación de programas ofimáticos
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary mr-2">•</span>
+              Configuración de antivirus y seguridad
+            </li>
+          </ul>
+          
+        </div>
+
+        <!-- Servicio 3 -->
+        <div class="bg-muted rounded-lg shadow-lg p-8">
+          <div class="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+            </svg>
+          </div>
+          <h2 class="text-2xl font-bold mb-4">Mantenimiento Preventivo</h2>
+          <p class="text-secondary-foreground mb-4">
+            Mantén tu PC en óptimas condiciones con nuestro servicio de mantenimiento.
+          </p>
+          <ul class="space-y-2 text-secondary-foreground mb-6">
+            <li class="flex items-start">
+              <span class="text-primary mr-2">•</span>
+              Limpieza interna y externa completa
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary mr-2">•</span>
+              Optimización de sistema operativo
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary mr-2">•</span>
+              Actualización de drivers y software
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary mr-2">•</span>
+              Revisión de temperatura y ventilación
+            </li>
+          </ul>
+        </div>
+
+        <!-- Servicio 4 -->
+        <div class="bg-muted rounded-lg shadow-lg p-8">
+          <div class="w-16 h-16 bg-red-100 rounded-lg flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-3m-1 4l-3 3m0 0l-3-3m3 3V2"></path>
+            </svg>
+          </div>
+          <h2 class="text-2xl font-bold mb-4">Recuperación de Datos</h2>
+          <p class="text-secondary-foreground mb-4">
+            Recupera tus archivos importantes de discos dañados o formateados.
+          </p>
+          <ul class="space-y-2 text-secondary-foreground mb-6">
+            <li class="flex items-start">
+              <span class="text-primary mr-2">•</span>
+              Recuperación de discos duros y SSD
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary mr-2">•</span>
+              Recuperación de USB y tarjetas de memoria
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary mr-2">•</span>
+              Recuperación después de formateo
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary mr-2">•</span>
+              Backup y soluciones de almacenamiento
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="text-center mt-12">
+        <a href="/contacto" class="bg-accent text-secondary px-8 py-3 rounded-lg font-semibold hover:bg-accent-hover hover:text-secondary-foreground transition-colors">
+          Solicitar Cotización
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>

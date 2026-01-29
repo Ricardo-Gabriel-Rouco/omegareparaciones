@@ -1,0 +1,81 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+  <section class="py-16">
+    <div class="container mx-auto px-4">
+      <h1 class="text-4xl font-bold text-center mb-12 text-primary">
+        Acerca de Nosotros
+      </h1>
+      
+      <div class="max-w-4xl mx-auto">
+        <div class="bg-muted rounded-lg shadow-lg p-8 mb-12">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+              <h2 class="text-3xl font-bold mb-4 text-primary">Omega Reparaciones</h2>
+              <p class="text-secondary-foreground mb-4">
+                Somos un equipo de técnicos especializados en reparación y mantenimiento de computadoras 
+                con más de 10 años de experiencia en el sector.
+              </p>
+              <p class="text-secondary-foreground mb-4">
+                Nuestra misión es proporcionar soluciones informáticas confiables y a precios accesibles 
+                para hogares y pequeñas empresas, garantizando la satisfacción de nuestros clientes en cada servicio.
+              </p>
+            </div>
+            <div class="bg-secondary rounded-lg h-64 flex items-center justify-center">
+              <p class="text-gray-500">[Logo o imagen del equipo]</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          <div class="bg-muted rounded-lg shadow-lg p-6 text-center">
+            <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Garantía de Calidad</h3>
+            <p class="text-secondary-foreground">Todos nuestros servicios cuentan con garantía para tu tranquilidad.</p>
+          </div>
+          
+          <div class="bg-muted rounded-lg shadow-lg p-6 text-center">
+            <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Servicio Rápido</h3>
+            <p class="text-secondary-foreground">Diagnóstico y reparación en tiempo récord para no interrumpir tu trabajo.</p>
+          </div>
+          
+          <div class="bg-muted rounded-lg shadow-lg p-6 text-center">
+            <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Atención Personalizada</h3>
+            <p class="text-secondary-foreground">Trato cercano y soluciones adaptadas a tus necesidades específicas.</p>
+          </div>
+        </div>
+        
+        <div class="bg-muted text-white rounded-lg p-8 text-center">
+          <h2 class="text-2xl text-primary font-bold mb-4">¿Necesitas ayuda con tu computadora?</h2>
+          <p class="mb-6 text-lg">
+            Contáctanos hoy mismo y obtén un diagnóstico gratuito sin compromiso.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="/contacto" class="bg-accent text-secondary px-8 py-3 rounded-lg font-semibold hover:bg-accent-hover hover:text-secondary-foreground transition-colors">
+              Contactar Ahora
+            </a>
+            <a href="tel:5551234567" class="bg-accent text-secondary px-8 py-3 rounded-lg font-semibold hover:bg-accent-hover hover:text-secondary-foreground transition-colors">
+              Llamar (555) 123-4567
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

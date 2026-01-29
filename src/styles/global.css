@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+/* Variables CSS personalizadas basadas en la configuración de Tailwind */
+:root {
+  --color-primary: #cbe03f;
+  --color-primary-foreground: #000000;
+  --color-background: #000000;
+  --color-background-foreground: #cbe03f;
+  --color-accent: #cbe03f;
+  --color-accent-hover: #a8bc35;
+  --color-accent-muted: #2a2a2a;
+  --color-secondary: #1a1a1a;
+  --color-secondary-foreground: #ffffff;
+  --color-muted: #333333;
+  --color-muted-foreground: #cbe03f;
+  --color-highlight: #d4e453;
+  --color-highlight-foreground: #000000;
+}
+
+/* Estilos base */
+body {
+  background-color: var(--color-background);
+  color: var(--color-background-foreground);
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Clases de utilidad personalizadas */
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-primary-foreground {
+  color: var(--color-primary-foreground);
+}
+
+.text-secondary-foreground {
+  color: var(--color-secondary-foreground);
+}
+
+.bg-primary {
+  background-color: var(--color-primary);
+}
+
+.bg-primary-foreground {
+  background-color: var(--color-primary-foreground);
+}
+
+.text-accent {
+  color: var(--color-accent);
+}
+
+.bg-accent {
+  background-color: var(--color-accent);
+}
+
+.text-secondary {
+  color: var(--color-secondary);
+}
+
+.bg-secondary {
+  background-color: var(--color-secondary);
+}
+
+.text-muted {
+  color: var(--color-muted);
+}
+
+.bg-muted {
+  background-color: var(--color-muted);
+}
+
+.text-highlight {
+  color: var(--color-highlight);
+}
+
+.bg-highlight {
+  background-color: var(--color-highlight);
+}
+
+/* Clases de hover */
+.hover\:bg-accent-hover:hover {
+  background-color: var(--color-accent-hover);
+}
+
+.hover\:text-secondary-foreground:hover {
+  color: var(--color-secondary-foreground);
+}
+
+/* Transiciones */
+.transition-colors {
+  transition:
+    color 0.15s ease-in-out,
+    background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+}
+
