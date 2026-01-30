@@ -2,15 +2,43 @@
 // Componente de navegación
 ---
 <nav class="hidden md:flex space-x-6 text-primary text-lg">
-  <a href="/" class="hover:bg-accent-hover hover:text-black p-1 transition-colors">Inicio</a>
-  <a href="/servicios" class="hover:bg-accent-hover hover:text-black p-1 transition-colors">Servicios</a>
-  <a href="/nosotros" class="hover:bg-accent-hover hover:text-black p-1 transition-colors">Nosotros</a>
-  <a href="/contacto" class="hover:bg-accent-hover hover:text-black p-1 transition-colors">Contacto</a>
+  <a href="/" class="hover:bg-accent-hover hover:text-black px-3 py-2 rounded transition-colors">Inicio</a>
+  <a href="/servicios" class="hover:bg-accent-hover hover:text-black px-3 py-2 rounded transition-colors">Servicios</a>
+  <a href="/nosotros" class="hover:bg-accent-hover hover:text-black px-3 py-2 rounded transition-colors">Nosotros</a>
+  <a href="/contacto" class="hover:bg-accent-hover hover:text-black px-3 py-2 rounded transition-colors">Contacto</a>
 </nav>
 
 <!-- Menú móvil (botón hamburguesa) -->
-<button class="md:hidden text-white" id="mobile-menu-button">
+<button class="md:hidden text-primary p-2" id="mobile-menu-button" aria-label="Toggle menu">
   <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
   </svg>
-</button
+</button>
+
+<!-- Menú móvil desplegable -->
+<div id="mobile-menu" class="hidden md:hidden absolute top-full bg-muted left-0 right-0 bg-background shadow-lg">
+  <nav class="flex flex-col p-4 space-y-2">
+    <a href="/" class="text-primary hover:bg-accent-hover hover:text-black px-3 py-2 rounded transition-colors">Inicio</a>
+    <a href="/servicios" class="text-primary hover:bg-accent-hover hover:text-black px-3 py-2 rounded transition-colors">Servicios</a>
+    <a href="/nosotros" class="text-primary hover:bg-accent-hover hover:text-black px-3 py-2 rounded transition-colors">Nosotros</a>
+    <a href="/contacto" class="text-primary hover:bg-accent-hover hover:text-black px-3 py-2 rounded transition-colors">Contacto</a>
+  </nav>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    mobileMenuButton?.addEventListener('click', () => {
+      mobileMenu?.classList.toggle('hidden');
+    });
+    
+    // Cerrar menú al hacer clic fuera
+    document.addEventListener('click', (e) => {
+      if (!mobileMenuButton?.contains(e.target) && !mobileMenu?.contains(e.target)) {
+        mobileMenu?.classList.add('hidden');
+      }
+    });
+  });
+</script>

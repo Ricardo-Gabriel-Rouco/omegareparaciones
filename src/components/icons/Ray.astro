@@ -1,0 +1,20 @@
+---
+interface Props {
+  containerClass?: string;
+  svgClass?: string;
+}
+
+const { containerClass = "w-16 h-16 bg-light rounded-full flex items-center justify-center mx-auto mb-4", svgClass = "w-8 h-8 text-accent-hover" } = Astro.props;
+---
+<div class={containerClass}>
+  <svg
+    class={svgClass}
+    fill="none"
+    stroke="currentColor"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+  </svg>
+</div>
+
