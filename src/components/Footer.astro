@@ -1,5 +1,6 @@
 ---
 // Componente Footer
+import {dataNegocio} from "../data/negocio.ts"
 const year = new Date().getFullYear();
 ---
 <footer class="bg-background text-white mt-12">
@@ -23,9 +24,9 @@ const year = new Date().getFullYear();
       <div>
         <h3 class="text-lg text-primary font-semibold mb-4">Contacto</h3>
         <ul class="space-y-2 text-gray-300">
-          <li>Teléfono: (Sin especificar)</li>
-          <li>Email: contacto@omegareparaciones.com</li>
-          <li>Ubicación: (Sin especificar)</li>
+          <li>Teléfono: {dataNegocio.phone}</li>
+          <li>Email: {dataNegocio.mail}</li>
+          <li>Instagram: {dataNegocio.instagram}</li>
         </ul>
       </div>
     </div>

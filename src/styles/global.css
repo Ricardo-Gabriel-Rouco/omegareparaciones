@@ -15,6 +15,7 @@
   --color-muted-foreground: #cbe03f;
   --color-highlight: #d4e453;
   --color-highlight-foreground: #000000;
+  --color-light: #e4f092;
 }
 
 /* Estilos base */
@@ -54,6 +55,10 @@ body {
   color: var(--color-accent);
 }
 
+.text-accent-hover {
+  color: var(--color-accent-hover);
+}
+
 .bg-accent {
   background-color: var(--color-accent);
 }
@@ -64,6 +69,10 @@ body {
 
 .bg-secondary {
   background-color: var(--color-secondary);
+}
+
+.bg-light {
+  background-color: var(--color-light);
 }
 
 .text-muted {
@@ -98,4 +107,3 @@ body {
     background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out;
 }
-
